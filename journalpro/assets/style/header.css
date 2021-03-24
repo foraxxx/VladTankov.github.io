@@ -1,0 +1,128 @@
+/* Преподаватель и студент =========================*/
+
+header {
+    background: var(--c_main);
+    margin-bottom: 30px;
+    height: 78px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    color: #fff;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo h1 {
+    margin-left: 15px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.header__inner h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .06pc;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 0 20px;
+    height: 100%;
+
+    transition: .1s;
+}
+
+.user:hover {
+    background: rgba(0,0,0,.1);
+}
+
+.user > p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user_rank {
+    display: inline;
+
+    margin-top: 5px;
+    padding: 3px 9px;
+
+    background-color: #fff;
+    border-radius: 4px;
+
+    font-size: 14px;
+    color: var(--c_main);
+    font-weight: 600;
+}
+
+/* Студент =========================*/
+
+.student .pages {
+    display: inline-flex;
+}
+
+.student .pages .MyLink {
+    box-sizing: border-box;
+    padding: 26px 14px;
+
+    font-size: 18px;
+    font-weight: 600;
+    /*color: rgba(255, 255, 255, 0.5);*/
+    color: #fff;
+
+    transition: .2s;
+}
+
+.student .pages .MyLink:hover {
+    font-size: 20px;
+}
+
+
+/*================js на аккаунте студента================*/
+
+.content__table {
+    display: none;
+}
+
+.content__table--active {
+    display: block;
+}
+
+.MyLink--active {
+    background: #3076FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

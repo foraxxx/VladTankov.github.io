@@ -1,0 +1,165 @@
+@import "root.css";
+@import "font.css";
+@import "header.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.container_header {
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+.container_progress {
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+.container_progress-2 {
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+.container_1 {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+.container_2 {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.container_3 {
+    width: 100%;
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+.container_4 {
+  width: 100%;
+  max-width: 894px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.container_5 {
+  width: 100%;
+  max-width: 894px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/*================ Кнопки успеваемости и темы ================*/
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buttons-1 {
+    display: flex;
+}
+
+.item {
+    width: 176px;
+    height: 33px;
+
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    border: var(--table_border);
+    border-width: 1px 1px 0 1px;
+
+    transition: .1s;
+}
+
+.item:hover {
+    background: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.05);
+    border-width: 1px 1px 0 1px;
+}
+
+.item-1 {
+    border-radius: 7px 0 0 0;
+}
+
+.item-2 {
+    border-radius: 0 7px 0 0;
+}
+
+.buttons-1 > .active {
+    border: var(--table_border);
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

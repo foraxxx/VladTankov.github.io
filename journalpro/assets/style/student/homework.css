@@ -1,0 +1,131 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 28% 1fr;
+
+  margin-bottom: 44px;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 33px;
+  height: 33px;
+
+  border: 2.5px solid var(--c_main);
+  border-radius: 16.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: var(--c_main);
+}
+
+.arrow:hover .arrow__line {
+  stroke: #fff;
+}
+
+.week__name {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 13px;
+}
+
+.nav-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 5px;
+  background-color: #fff;
+  transition: .1s linear;
+}
+
+.calendar:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/*All table*/
+.homeworks {
+    display: grid;
+    grid-gap: 44px;
+
+    margin-bottom: 30px;
+}
+
+/*Date*/
+.timetable__date {
+    font-size: 24px;
+     margin-bottom: 14px;
+}
+
+.timetable__date__weekday {
+    font-weight: 500;
+      color: #173B80;
+}
+
+.timetable__date__number {
+    font-weight: 600;
+    padding-left: 16px;
+    color: #13A9E9;
+}
+
+/*Table*/
+.homework__table {
+    border-collapse: collapse;\
+    font-size: 16px;
+    width: 100%;
+}
+
+/*Borders*/
+.homework__table th, .homework__table td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/*Row thead*/
+.homework__table thead tr th {
+    background-color: #EDEDED;
+    font-weight: 600;
+    text-align: left;
+}
+
+/*All elements tbody*/
+..homework__table tbody td {
+    font-weight: 500;
+}
+
+/*Numbers (1)*/
+.homework__table tbody td:nth-child(1) {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px 21.5px;
+}
+
+/*2 row th and td*/
+.homework__table tbody td:nth-child(2),
+.homework__table thead th:nth-child(2) {
+    width: 296px;
+    padding: 6px 19px;
+}
+
+/*3 row th and td*/
+.homework__table tbody td:nth-child(3),
+.homework__table thead th:nth-child(3) {
+    width: 542px;
+    padding: 6px 19px;
+}

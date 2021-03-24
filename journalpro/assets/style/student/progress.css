@@ -1,0 +1,248 @@
+
+/*================ Списки ================*/
+
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 80px;
+    padding: 32px 0 15px 0;
+}
+
+.select-box {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+
+    margin-right: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    z-index: 1;
+}
+
+.select-box .options-container {
+    background: #fff;
+    color: var(--c_main);
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all .4s;
+    border-radius: 0 0 16.5px 16.5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    overflow: hidden;
+
+    order: 1;
+}
+
+.selected {
+    position: relative;
+
+    background: #fff;
+    color: var(--c_main);
+    border-radius: 16.5px;
+    border: 2px solid var(--c_main);
+
+    order: 0;
+}
+
+.selected:hover {
+    border-radius: 16.5px 16.5px 0 0;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+
+.selected::after {
+    content: "";
+    background-image: url(../../img/arrow_down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    height: 10px;
+    width: 16px;
+    top: 11px;
+    right: 20px;
+    transition: all .4s;
+}
+
+.select-box .options-container.active {
+    max-height: 195px;
+    opacity: 1;
+}
+
+.select-box .options-container.active + .selected::after{
+    transform: rotateX(180deg);
+}
+
+.select-box .option, .selected {
+    padding: 5px 1px 5px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background: var(--c_main);
+    color: #fff;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
+
+/*================ Таблица ================*/
+.table-box {
+    padding-right: 20px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-box table th,td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.table-box thead {
+    height: 69px;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.table-box thead tr {
+    height: 35px;
+    font-size: 17px;
+}
+
+.table-box tbody tr {
+    height: 34px;
+    font-size: 16px;
+}
+
+.table-box .mark__table tr td {
+    overflow-y: hidden;
+}
+
+.table-box .mark__table td:nth-child(1){
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.table-box .mark__table td:nth-child(2){
+    padding: 8px 21px 8px 10px;
+    font-weight: 500;
+}
+
+.table-box .mark__table td:nth-child(1), td:nth-child(2), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+    /*background: rgba(0, 0, 0, 0.03);*/
+}
+
+.table-box td:nth-child(3) {
+    padding: 0 6px;
+    min-width: 672px;
+    overflow-x: hidden;
+}
+
+.table-box td:nth-child(3) div{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.mark {
+    margin: 0 2px;
+    display: flex;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.five {
+    background: var(--c_green);
+}
+
+.four {
+    background: var(--c_greenLight);
+}
+
+.double {
+    background: var(--c_greenLight);
+}
+
+.three {
+    background: var(--c_orange);
+}
+
+.two {
+    background: var(--c_red);
+}
+
+.BNU {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.zero {
+    background: #000;
+}
+
+.BNU__colvo {
+    font-weight: 600;
+    text-align: center;
+}
+
+.itog-1 {
+    text-align: center;
+    font-weight: 600;
+
+    background: rgba(219, 27, 27, 0.1);
+    color: var(--c_red);
+}
+
+.itog-2 {
+    text-align: center;
+    font-weight: 600;
+
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.itog-3 {
+    text-align: center;
+    font-weight: 600;
+    background: rgba(0, 204, 0, 0.1);
+    background: rgba(0, 204, 0, 0.1);
+    color: var(--c_greenLight);
+}
+
+/*================ Скроллбар ================*/
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #EDEDED;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+

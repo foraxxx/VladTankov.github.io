@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel = "stylesheet" href = "../assets/style/main.css">
+  <link rel = "stylesheet" href = "../assets/style/timetable.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap">
+  <title>Расписание</title>
+</head>
+<body>
+
+  <!-- шапка -->
+
+  <header>
+      <div class="header__inner container_header">
+          <div class="header__logo">
+              <img src="../assets/img/logo.png" alt="">
+              <h1>Журнал PRO</h1>
+          </div>
+
+          <h2>Расписание</h2>
+
+          <a href="#" class="user">
+              <p>Цымбалюк Л.Н.</p>
+              <div class="user_rank center">
+                  <p>Преподаватель</p>
+              </div>
+          </a>
+      </div>
+  </header>
+
+
+  <nav class="container_2">
+    <section></section>
+
+    <section class="nav-2">
+      <a href="#">
+      <div class="arrow">
+        <!-- <svg>
+          <use xlink:href="#x3"></use>
+        </svg> -->
+        <svg width="11" height="18" viewBox="0 0 11 18" xmlns="http://www.w3.org/2000/svg">
+          <line class="arrow__line" x1="1.25" y1="-1.25" x2="11.1284" y2="-1.25" transform="matrix(0.707109 -0.707104 0.707109 0.707104 1.81543 10.78)" stroke="#2062E2" stroke-width="2.5" stroke-linecap="round"/>
+          <line class="arrow__line" x1="1.25" y1="-1.25" x2="11.1284" y2="-1.25" transform="matrix(0.707102 0.707112 0.707102 -0.707112 1.81543 7.71533)" stroke="#2062E2" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <!-- <img src="img/larrow.svg" alt=""> -->
+      </div>
+      </a>
+      <span class="week__name">Верхняя неделя</span>
+      <a href="#">
+      <div class="arrow">
+        <svg width="11" height="18" viewBox="0 0 11 18" xmlns="http://www.w3.org/2000/svg">
+          <line class="arrow__line" x1="1.25" y1="-1.25" x2="11.1284" y2="-1.25" transform="matrix(-0.707109 -0.707104 -0.707109 0.707104 9.00391 10.78)" stroke="#2062E2" stroke-width="2.5" stroke-linecap="round"/>
+          <line class="arrow__line" x1="1.25" y1="-1.25" x2="11.1284" y2="-1.25" transform="matrix(-0.707102 0.707112 -0.707102 -0.707112 9.00391 7.71533)" stroke="#2062E2" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <!-- <img src="img/rarrow.svg" alt=""> -->
+      </div>
+      </a>
+    </section>
+
+    <section class="nav-3">
+      <a href="#">
+      <div class="calendar">
+        <img src="../assets/img/calendar.svg" alt="" width="30px" height="30px">
+      </div>
+      </a>
+<!--       <section class="groups">
+        <span>Группы</span>
+        <a href="#">
+        <img src="img/darrow.svg" alt="">
+        </a>
+      </section> -->
+
+                <!-- popup группы-->
+
+                <div>
+                  <button id="myBtn" class="popup__button">Группы</button>
+
+              <div id="popup" class="popup">
+            <div class="popup__content">
+              <div class="popup__header">
+                <p class="popup__title">группы</p>
+                <a href="#" class="popup__close">✖</a>
+              </div>
+              <div class="popup__text">
+                <div class="popup__text-1">
+                  <p>Основы программирования</p>
+                  <a href="#">9901</a>
+                  <a href="#">6901</a>
+                  <a href="#">8951</a>
+                  <a href="#">9903</a>
+                  <a href="#">7901</a>
+                </div>
+                <div class="popup__text-1">
+                  <p>Базы данных</p>
+                  <a href="#">9901</a>
+                  <a href="#">6901</a>
+                  <a href="#">8951</a>
+                  <a href="#">9903</a>
+                </div>
+                <div class="popup__text-1">
+                  <p>Основы SQL</p>
+                  <a href="#">9901</a>
+                  <a href="#">6901</a>
+                  <a href="#">8951</a>
+                  <a href="#">9903</a>
+                  <a href="#">7901</a>
+                </div>
+                <div class="popup__text-1">
+                  <p>Веб-пргграммирование</p>
+                  <a href="#">9901</a>
+                  <a href="#">6901</a>
+                  <a href="#">8951</a>
+                  <a href="#">9903</a>
+                  <a href="#">7901</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+
+    </section>
+  </nav>
+
+  <section class="timetable container_2">
+<!-- Понедельник -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Понедельник</span>
+        <span class="date__number">19 марта</span>
+      </section>
+<!-- Понедельник, 1 пара -->
+    <a href="../teacher/progress.html">
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+    </a>
+<!-- Понедельник, 2 пара -->
+      <section class="pair">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Понедельник, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Понедельник, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением...</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Понедельник -->
+
+<!-- Вторник -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Вторник</span>
+        <span class="date__number">20 марта</span>
+      </section>
+<!-- Вторник, 1 пара -->
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Вторник, 2 пара -->
+      <section class="pair">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">104 каб</span>
+      </section>
+<!-- Вторник, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">6901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Вторник, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением...</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Вторник -->
+
+<!-- Среда -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Среда</span>
+        <span class="date__number">21 марта</span>
+      </section>
+<!-- Среда, 1 пара -->
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Среда, 2 пара -->
+      <section class="pair">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">104 каб</span>
+      </section>
+<!-- Среда, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">6901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Среда, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением и шапап шап а</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Среда -->
+
+
+<!-- Четверг -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Четверг</span>
+        <span class="date__number">22 марта</span>
+      </section>
+<!-- Четверг, 1 пара -->
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Четверг, 2 пара -->
+      <section class="pair swap">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Четверг, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">6901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Четверг, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением...</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Четверг -->
+
+<!-- Пятница -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Пятница</span>
+        <span class="date__number">23 марта</span>
+      </section>
+<!-- Пятница, 1 пара -->
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Пятница, 2 пара -->
+      <section class="pair">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">104 каб</span>
+      </section>
+<!-- Пятница, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">6901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Пятница, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением...</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Пятница -->
+
+<!-- Суббота -->
+    <article class="day">
+      <section class="date">
+        <span class="date__weekday">Суббота</span>
+        <span class="date__number">24 марта</span>
+      </section>
+<!-- Суббота, 1 пара -->
+      <section class="pair">
+          <div class="pair__num">1</div>
+          <div class="pair__name">Проектирование и веб-разработка</div>
+          <div class="pair__group">7901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Суббота, 2 пара -->
+      <section class="pair">
+          <div class="pair__num">2</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">9901</div>
+          <span class="pair__cab">104 каб</span>
+      </section>
+<!-- Суббота, 3 пара -->
+      <section class="pair">
+          <div class="pair__num">3</div>
+          <div class="pair__name">Основы программирования</div>
+          <div class="pair__group">6901</div>
+          <span class="pair__cab">103 каб</span>
+      </section>
+<!-- Суббота, 4 пара -->
+      <section class="pair">
+          <div class="pair__num">4</div>
+          <div class="pair__name">Технология работы с аппаратным обеспечением...</div>
+          <div class="pair__group">8901</div>
+          <span class="pair__cab">107 каб</span>
+      </section>
+
+    </article><!-- Суббота -->
+
+
+  </section> <!-- Timetable -->
+
+  <script src="../assets/script/script.js"></script>
+
+</body>
+</html>

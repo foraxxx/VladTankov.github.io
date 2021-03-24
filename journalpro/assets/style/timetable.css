@@ -1,0 +1,333 @@
+
+/*=============== основной блок ===============*/
+
+.container_2 {
+  display: grid;
+  grid-template-columns: 1fr 28% 1fr;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 33px;
+  height: 33px;
+
+  border: 2.5px solid #2062E2;
+  border-radius: 16.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: #2062E2;
+}
+
+.arrow:hover .arrow__line {
+  stroke: #fff;
+}
+
+.week__name {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 13px;
+}
+
+.nav-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 5px;
+  background-color: #fff;
+  transition: .1s linear;
+}
+
+.calendar:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/*.groups {
+  width: 126.88px;
+  height: 32.54px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: #2062E2;
+  border-radius: 16.5px;
+  border: 2.5px solid #2062E2;
+}*/
+/*================ popup группы ================*/
+
+
+.popup__button {
+    margin: 0;
+    padding: 5px 29px;
+
+    border: 2px solid var(--c_main);
+    border-radius: 16.5px;
+
+    background-color: #fff;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--c_main);
+
+    transition: .1s;
+}
+
+.popup__button:hover {
+    color: #fff;
+    background-color: var(--c_main);
+}
+
+.popup__button:focus {
+    color: #fff;
+    background-color: var(--c_main);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    animation-name: animationOpen;
+    animation-duration: 0.5s;
+}
+
+@keyframes animationOpen {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+}
+
+.popup__content {
+      padding: 15px;
+      padding-left: 40px;
+
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+      width: 486px;
+      height: 370px;
+      background-color: #fff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+      border-radius: 10px;
+}
+
+.popup__header {
+      display: flex;
+}
+
+.popup__title {
+      margin: 10px auto 0 auto;
+      padding-left: 19px;
+
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #000;
+      font-weight: 700;
+}
+
+.popup__close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 30px;
+      height: 30px;
+      color: rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+      border-radius: 4px;
+
+      transition: .1s;
+}
+
+.popup__close:hover {
+      color: #000;
+      background: #eee;
+}
+
+.popup__text p {
+    margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #000;
+}
+
+
+.popup__text a {
+      padding: 5px 13px;
+
+      font-size: 20px;
+      font-weight: 700;
+      background: #fff;
+      color: var(--c_main);
+}
+
+.popup__text a:hover {
+      background: var(--c_main);
+      color: #fff;
+}
+
+
+
+/* Расписание */
+.timetable {
+  display: grid;
+  grid-column-gap: 60px;
+  grid-row-gap: 46px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.day {
+  background-color: white;
+}
+
+/* Дата */
+.date {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 14px;
+}
+
+.date__weekday {
+  color: #173B80;
+}
+
+.date__number {
+  padding-left: 16px;
+  color: #13A9E9;
+}
+
+/* Пара */
+.pair {
+  height: 54px;
+  margin-top: 7px;
+
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+.pair:hover {
+  background: #E0E0E0;
+}
+
+.student .pair {
+    cursor: default;
+}
+
+.student .pair:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.pair__num {
+  display: flex;
+  justify-content: center;
+
+  width: 48px;
+  color: #2062E2;
+  font-size: 22.5px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+.pair__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  width: 258px;
+  max-height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  padding-right: 8px;
+}
+
+.pair__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+
+  width: 69px;
+  height: 30.25px;
+
+  background-color: blue;
+  border-radius: 15.12px;
+}
+
+.pair__cab {
+  font-size: 18px;
+  font-weight: bold;
+  color: #173B80;
+  padding-left: 15px;
+}
+
+/* Замена */
+section .pair.swap {
+  background-color: #DB1B1B;
+}
+
+section .pair.swap:hover {
+  background-color: #BF1414;
+}
+
+section .pair.swap:hover {
+  background-color: #DB1B1B;
+}
+
+section .pair.swap > .pair__num, section .pair.swap > .pair__name {
+  color: #fff;
+}
+
+section .pair.swap > .pair__group {
+  color: #DB1B1B;
+  background-color: #fff;
+}
+
+section .pair.swap > .pair__cab {
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,119 @@
+h1, h2 {
+    font-size: 40px;
+}
+
+.all {
+    display: flex;
+    height: 100vh;
+}
+
+/*About
+===========================*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(../img/avtorization_backgroung.png);
+    background-size: cover;
+    color: #fff;
+    width: 29%;
+    min-width: 520px;
+    padding: 60px;
+}
+
+.about img {
+    width: 72px;
+}
+
+.text h1 {
+    margin-bottom: 23px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Аuthorization
+===========================*/
+
+.autotization {
+    margin: auto;
+}
+
+.textbox_area {
+    margin: 30px 0;
+}
+
+.textbox_area input {
+    display: block;
+
+    padding: 0 30px;
+    outline: none;
+    background: none;
+
+    width: 347px;
+    height: 68px;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 7px;
+}
+
+.textbox_area input:first-child {
+    margin-bottom: 18px;
+}
+
+.textbox_area input:focus {
+    border: 2px solid var(--c_main);
+}
+
+.textbox_area input:hover {
+    border: 2px solid var(--c_main);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .7);
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .7);
+}
+
+::-ms-input-placeholder {
+    color: rgba(0, 0, 0, .7);
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, .7);
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.autotization .button {
+    width: 162px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: var(--c_main);
+
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid var(--c_main);
+    outline: none;
+
+    transition: .2s;
+    cursor: pointer;
+}
+
+.autotization .button:hover {
+    background-color: #fff;
+    border: 2px solid var(--c_main);
+    color: var(--c_main);
+}

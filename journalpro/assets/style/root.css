@@ -1,0 +1,14 @@
+:root {
+    --c_main: #2062E2;
+    --c_mainOpacity: rgba(32, 98, 226, 0.05);
+    --c_two: #173B80;
+    --c_three: #13A9E9;
+
+    --c_red: #DB1B1B;
+    --c_green: #0E9B4F;
+    --c_greenLight: #0E9B4F;
+    --c_orange: #FF8900;
+    --c_grey: #707070;
+
+    --table_border: 1px solid rgba(0, 0, 0, 0.3);
+}

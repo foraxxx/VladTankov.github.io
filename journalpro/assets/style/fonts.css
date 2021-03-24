@@ -1,0 +1,53 @@
+/*Montserrat regular (400) (don't use)*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat_regular.eot');
+    src: local('☺'), url('../fonts/Montserrat_regular.woff') format('woff'), url('../fonts/Montserrat_regular.ttf') format('truetype'), url('../fonts/Montserrat_regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Montserrat bold (700)*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat_bold.eot');
+    src: local('☺'), url('../fonts/montserrat_bold.woff') format('woff'), url('../fonts/montserrat_bold.ttf') format('truetype'), url('../fonts/montserrat_bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Montserrat medium (500) */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat_medium.eot');
+    src: local('☺'), url('../fonts/montserrat_medium.woff') format('woff'), url('../fonts/montserrat_medium.ttf') format('truetype'), url('../fonts/montserrat_medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*Montserrat semibold (600) */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat_semibold.eot');
+    src: local('☺'), url('../fonts/Montserrat_semibold.woff') format('woff'), url('../fonts/Montserrat_semibold.ttf') format('truetype'), url('../fonts/Montserrat_semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*Ubuntu regular (400)*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu_regular.eot');
+    src: local('☺'), url('../fonts/Ubuntu_regular.woff') format('woff'), url('../fonts/Ubuntu_regular.ttf') format('truetype'), url('../fonts/Ubuntu_regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Ubuntu medium (500) */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu_medium.eot');
+    src: local('☺'), url('../fonts/Ubuntu_medium.woff') format('woff'), url('../fonts/Ubuntu_medium.ttf') format('truetype'), url('../fonts/Ubuntu_medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
